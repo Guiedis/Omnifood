@@ -3,698 +3,797 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Omnifood is an AI-powered subscription That will make you eat healthly again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
-    />
-
-    <!-- always include this!! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--  -->
-
-    <link rel="icon" href="img/favicon.png" />
-
-    <!-- for iPhones bookmarks -->
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-    <!-- for Android bookmarks -->
-    <link rel="manifest" href="manifest.webmanifest" />
-
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
       rel="stylesheet"
     />
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script
-      defer
-      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
-    ></script>
-    <script defer src="js/script.js"></script>
-
-    <title>Omnifood &mdash; Never cook again</title>
+    <title>Guido Fernández</title>
   </head>
   <body>
+    <!-- H E A D E R -->
     <header class="header">
       <a href="#">
-        <img class="logo" alt="omnifood-logo" src="img/omnifood-logo.png" />
+        <img
+          class="logo"
+          alt="Guido Fernández"
+          src="img/GuidoFernandezWebLogo.png"
+        />
       </a>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#how">How it works</a></li>
-          <li><a class="main-nav-link" href="#meals">Meals</a></li>
-          <li>
-            <a class="main-nav-link" href="#testimonials">Testimonials</a>
-          </li>
-          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
+          <li><a class="main-nav-link" href="#">Sobre&nbspMi</a></li>
+          <li><a class="main-nav-link" href="#">Skills</a></li>
+          <li><a class="main-nav-link" href="#">Experiencia</a></li>
+          <li><a class="main-nav-link" href="#">Educación</a></li>
+          <li><a class="main-nav-link" href="#">Otras&nbspActividades</a></li>
+          <li><a class="main-nav-link link-contact" href="#">Contactame</a></li>
         </ul>
       </nav>
-
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
     </header>
 
+    <!-- M A I N -->
     <main>
-      <section class="section-hero">
-        <div class="hero">
-          <div class="hero-text-box">
-            <h1 class="heading-primary">
-              A healthy meal delivered to your door, every single day
-            </h1>
-            <p class="hero-description">
-              The smart 365-days-per-year food subscription that will make you
-              eat healthy again. Tailored to your personal tastes and
-              nutritional needs.
-            </p>
-            <a href="#cta" class="btn btn--full margin-right-sm"
-              >Start eating well</a
-            >
-            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
-            <div class="delivered-meals">
-              <div class="delivered-imgs">
-                <img src="img/customers/customer-1.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-2.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-3.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-4.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-5.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-6.jpg" alt="Customer photo" />
-              </div>
-              <p class="delivered-text">
-                <span>250,000+</span> meals delivered last year!
-              </p>
-            </div>
-          </div>
-          <div class="hero-img-box">
-            <!-- the browser would choose the compatible image -->
-            <picture>
-              <source srcset="img/hero.webp" type="image/webp" />
-              <source srcset="img/hero-min.png" type="image/png" />
-              <!-- the image all browser should be able to load -->
-              <img
-                src="img/hero-min.png"
-                class="hero-img"
-                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-              />
-            </picture>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-featured">
+      <!-- ABOUT ME -->
+      <section class="section-about-me">
         <div class="container">
-          <h2 class="heading-featured-in">As featured in</h2>
-          <div class="logos">
-            <img src="img/logos/techcrunch.png" alt="Techcrunch logo" />
-            <img
-              src="img/logos/business-insider.png"
-              alt="Business Insider logo"
-            />
-            <img
-              src="img/logos/the-new-york-times.png"
-              alt="The New York Times logo"
-            />
-            <img src="img/logos/forbes.png" alt="Forbes logo" />
-            <img src="img/logos/usa-today.png" alt="USA Today logo" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section-how" id="how">
-        <div class="container">
-          <span class="subheading">How it works</span>
-          <h2 class="heading-secondary">
-            Your daily dose of health in 3 simple steps
+          <span class="heading-section-tag">Sobre mi</span>
+          <h2 class="heading-section-title">
+            Dejame contarte un poco acerca de mi
           </h2>
         </div>
-        <div class="container grid grid--2-cols grid--center-v">
-          <!-- STEP 01 -->
-          <div class="step-text-box">
-            <p class="step-number">01</p>
-            <h3 class="heading-tertiary">
-              Tell us what you like (and what not)
-            </h3>
-            <p class="step-description">
-              Never again waste time thinking about what to eat! Omnifood AI
-              will create a 100% personalized weekly meal plan just for you. It
-              makes sure you get all the nutrients and vitamins you need, no
-              matter what diet you follow!
-            </p>
-          </div>
-          <div class="step-img-box">
-            <img
-              src="img/app/app-screen-1.png"
-              class="step-img"
-              alt="iPhone app preferences selection screen"
-            />
-          </div>
-
-          <!-- STEP 02 -->
-          <div class="step-img-box">
-            <img
-              src="img/app/app-screen-2.png"
-              class="step-img"
-              alt="meal approving plan"
-            />
-          </div>
-          <div class="step-text-box">
-            <p class="step-number">02</p>
-            <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
-            <p class="step-description">
-              Once per week, approve the meal plan generated for you by Omnifood
-              AI. You can change ingredients, swap entire meals, or even add
-              your own recipes.
-            </p>
-          </div>
-
-          <!-- STEP 03 -->
-          <div class="step-text-box">
-            <p class="step-number">03</p>
-            <h3 class="heading-tertiary">Receive meals at convenient time</h3>
-            <p class="step-description">
-              Best chefs in town will cook your selected meal every day, and we
-              will deliver it to your door whenever works best for you. You can
-              change delivery schedule and address daily!
-            </p>
-          </div>
-          <div class="step-img-box">
-            <img
-              src="img/app/app-screen-3.png"
-              class="step-img"
-              alt="iPhone app delivery screen"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="section-meals" id="meals">
-        <div class="container center-text">
-          <span class="subheading">Meals</span>
-          <h2 class="heading-secondary">
-            Omnifood AI chooses from 5,000+ recipes
-          </h2>
-        </div>
-
-        <div class="container grid grid--3-cols margin-bottom-md">
-          <div class="meal">
-            <img
-              src="img/meals/meal-1.jpg"
-              class="meal-img"
-              alt="Japanese Gyozas"
-            />
-            <div class="meal-content">
-              <div class="meal-tags">
-                <span class="tag tag--vegetarian">Vegetarian</span>
-              </div>
-              <p class="meal-title">Japanese Gyozas</p>
-              <ul class="meal-attributes">
-                <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon
-                  ><span><strong>650</strong> calories </span>
-                </li>
-                <li class="meal-attribute">
-                  <ion-icon
-                    class="meal-icon"
-                    name="restaurant-outline"
-                  ></ion-icon
-                  ><span>Nutriscore &reg; <strong>74</strong></span>
-                </li>
-                <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="star-outline"></ion-icon
-                  ><span><strong>4.9</strong> rating (537)</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="meal">
-            <img
-              src="img/meals/meal-2.jpg"
-              class="meal-img"
-              alt="Avocado Salad"
-            />
-            <div class="meal-content">
-              <div class="meal-tags">
-                <span class="tag tag--vegan">Vegan</span>
-                <span class="tag tag--paleo">Paleo</span>
-              </div>
-              <p class="meal-title">Avocado Salad</p>
-              <ul class="meal-attributes">
-                <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon
-                  ><span><strong>400</strong> calories </span>
-                </li>
-                <li class="meal-attribute">
-                  <ion-icon
-                    class="meal-icon"
-                    name="restaurant-outline"
-                  ></ion-icon
-                  ><span>Nutriscore &reg; <strong>92</strong></span>
-                </li>
-                <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="star-outline"></ion-icon
-                  ><span><strong>4.8</strong> rating (441)</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="diets">
-            <h3 class="heading-tertiary">Works with any diet</h3>
-            <ul class="list">
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Vegetarian</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Vegan</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Pescatarian</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Gluten-free</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Lactose-free</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Keto</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Paleo</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Low FODMAP</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Kid-friendly</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="container all-recipes">
-          <a href="#" class="link">See all recipes &rarr;</a>
-        </div>
-      </section>
-
-      <section class="section-testimonials" id="testimonials">
-        <div class="testimonials-container">
-          <span class="subheading">Testimonials</span>
-          <h2 class="heading-secondary">Once you try it, you can't go back</h2>
-
-          <div class="testimonials">
-            <figure class="testimonial">
-              <img
-                class="testimonial-img"
-                src="img/customers/dave.jpg"
-                alt="Photo of customer Dave Bryson"
-              />
-              <blockquote class="testimonial-text">
-                Inexpensive, healthy and great-tasting meals, without even
-                having to order manually! It feels truly magical.
-              </blockquote>
-              <p class="testimonial-name">&mdash; Dave Bryson</p>
-            </figure>
-            <figure class="testimonial">
-              <img
-                class="testimonial-img"
-                src="img/customers/ben.jpg"
-                alt="Photo of customer Ben Hadley"
-              />
-              <blockquote class="testimonial-text">
-                The AI algorithm is crazy good, it chooses the right meals for
-                me every time. It's amazing not to worry about food anymore!
-              </blockquote>
-              <p class="testimonial-name">&mdash; Ben Hadley</p>
-            </figure>
-            <figure class="testimonial">
-              <img
-                class="testimonial-img"
-                src="img/customers/steve.jpg"
-                alt="Photo of customer Steve Miller"
-              />
-              <blockquote class="testimonial-text">
-                Omnifood is a life saver! I just started a company, so there's
-                no time for cooking. I couldn't live without my daily meals now!
-              </blockquote>
-              <p class="testimonial-name">&mdash; Steve Miller</p>
-            </figure>
-            <figure class="testimonial">
-              <img
-                class="testimonial-img"
-                src="img/customers/hannah.jpg"
-                alt="Photo of customer Hannah Smith"
-              />
-              <blockquote class="testimonial-text">
-                I got Omnifood for the whole family, and it frees up so much
-                time! Plus, everything is organic and vegan and without plastic.
-              </blockquote>
-              <p class="testimonial-name">&mdash; Hannah Smith</p>
-            </figure>
-          </div>
-        </div>
-        <div class="gallery">
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-1.jpg"
-              alt="Photo of beautifuly arranged food"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-2.jpg"
-              alt="Photo of beautifuly arranged food"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-3.jpg"
-              alt="Photo of beautifuly arranged food"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-4.jpg"
-              alt="Photo of beautifuly arranged food"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-5.jpg"
-              alt="Photo of beautifuly arranged food"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-6.jpg"
-              alt="Photo of beautifuly arranged food"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-7.jpg"
-              alt="Photo of beautifuly arranged food"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-8.jpg"
-              alt="Photo of beautifuly arranged food"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-9.jpg"
-              alt="Photo of beautifuly arranged food"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-10.jpg"
-              alt="Photo of beautifuly arranged food"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-11.jpg"
-              alt="Photo of beautifuly arranged food"
-            />
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="img/gallery/gallery-12.jpg"
-              alt="Photo of beautifuly arranged food"
-            />
-          </figure>
-        </div>
-      </section>
-
-      <section class="section-pricing" id="pricing">
-        <div class="container">
-          <span class="subheading">Pricing</span>
-          <h2 class="heading-secondary">
-            Eating well without breaking the bank
-          </h2>
-        </div>
-
-        <div class="container grid grid--2-cols margin-bottom-md">
-          <div class="pricing-plan pricing-plan--starter">
-            <header class="plan-header">
-              <p class="plan-name">Starter</p>
-              <p class="plan-price"><span>$</span>399</p>
-              <p class="plan-text">per month. That's just $13 per meal!</p>
-            </header>
-
-            <ul class="list">
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>1 meal per day</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Order from 11am to 9pm</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Delivery is free</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="close-outline"></ion-icon>
-              </li>
-            </ul>
-            <div class="plan-sign-up">
-              <a href="#" class="btn btn--full">Start eating well</a>
-            </div>
-          </div>
-
-          <div class="pricing-plan pricing-plan--complete">
-            <header class="plan-header">
-              <p class="plan-name">Complete</p>
-              <p class="plan-price"><span>$</span>649</p>
-              <p class="plan-text">per month. That's just $11 per meal!</p>
-            </header>
-
-            <ul class="list">
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span><strong>2 meals</strong> per day</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Order <strong>24/7</strong></span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Delivery is free</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Get access to latest recipes</span>
-              </li>
-            </ul>
-            <div class="plan-sign-up">
-              <a href="#" class="btn btn--full">Start eating well</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="container grid">
-          <aside class="plan-details">
-            Prices include all applicable taxes. You can cancel at any time.
-            Both plans include the following:
-          </aside>
-        </div>
-
-        <div class="container grid grid--4-cols">
-          <div class="feature">
-            <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
-            <p class="feature-title">Never cook again!</p>
-            <p class="feature-text">
-              Our subscriptions cover 365 days per year, even including major
-              holidays.
-            </p>
-          </div>
-          <div class="feature">
-            <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
-            <p class="feature-title">Local and organic</p>
-            <p class="feature-text">
-              Our cooks only use local, fresh, and organic products to prepare
-              your meals.
-            </p>
-          </div>
-          <div class="feature">
-            <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
-            <p class="feature-title">No waste</p>
-            <p class="feature-text">
-              All our partners only use reusable containers to package all your
-              meals.
-            </p>
-          </div>
-          <div class="feature">
-            <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
-            <p class="feature-title">Pause anytime</p>
-            <p class="feature-text">
-              Going on vacation? Just pause your subscription, and we refund
-              unused days.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-cta" id="cta">
-        <div class="container">
-          <div class="cta">
-            <div class="cta-text-box">
-              <h2 class="heading-secondary">Get your first meal for free!</h2>
-              <p class="cta-text">
-                Healthy, tasty and hassle-free meals are waiting for you. Start
-                eating well today. You can cancel or pause anytime. And the
-                first meal is on us!
-              </p>
-
-              <!-- <form class="cta-form" action="#"> -->
-              <form class="cta-form" name="sign-up" netlify>
-                <div>
-                  <label for="full-name">Full Name</label>
-                  <input
-                    id="full-name"
-                    type="text"
-                    placeholder="John Smith"
-                    name="full-name"
-                    required
-                  />
-                </div>
-                <div>
-                  <label for="email">Email address</label>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="me@example.com"
-                    name="email"
-                    required
-                  />
-                </div>
-                <div>
-                  <label for="select-where">Where did you hear from us?</label>
-                  <select id="select-where" name="select-where" required>
-                    <option value="">Please choose one option:</option>
-                    <option value="friends">Friends and family</option>
-                    <option value="youtube">Youtube video</option>
-                    <option value="podcast">Podcast</option>
-                    <option value="ad">Facebook ad</option>
-                    <option value="others">Other</option>
-                  </select>
-                </div>
-
-                <button class="btn btn--form">Sing up now</button>
-              </form>
-            </div>
+        <div class="container container-about-me">
+          <div class="about-me-box">
             <div
-              class="cta-img-box"
+              class="about-me-img"
               role="img"
-              aria-label="Woman enjoying food"
+              aria-label="Guido Fernández"
             ></div>
+            <div class="about-me-txt">
+              <p class="about-me-name">Guido Esteban Fernández</p>
+              <p class="about-me-txt-profession">
+                Analista Programador COBOL Mainframe Sr.
+              </p>
+              <a class="link-contact link-contact-about" href="#">Contactame</a>
+              <p class="about-me-txt-detail">
+                Dos meses luego de egresar de la educación secundaria (2008)
+                tuve la oportunidad de ya poder empezar a emprender este
+                apasionante camino como programador en el rubro bancario,
+                especializándome en COBOL Mainframe desde los inicios. Puedo
+                decir con certeza que amo de lo que trabajo y con orgullo de
+                haberlo hecho siempre aspirando constantemente a desenvolverme
+                con naturalidad en el ámbito corporativo, poniendo mucha
+                voluntad en absorber lo aprendido de las experiencias vividas,
+                entregar con la máxima calidad posible el trabajo final y
+                mantenerme dúctil y abierto siempre para seguir aprendiendo
+                constantemente tecnologías y metodologías de trabajo nuevas que
+                siempre surjan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section-skills">
+        <div class="container">
+          <span class="heading-section-tag">Skills</span>
+          <h2 class="heading-section-title">
+            Habilidades Técnicas de mi día a día laboral y extralaboral
+          </h2>
+        </div>
+        <div class="container container-sub container-skills">
+          <div class="skills-card">
+            <p class="skills-card-title">Mainframe</p>
+            <ul class="skills-card-details">
+              <li class="skills-card-item">COBOL</li>
+              <li class="skills-card-item">CICS</li>
+              <li class="skills-card-item">TSO</li>
+              <li class="skills-card-item">
+                Altamira &verbar; Altair &verbar; ASTA
+              </li>
+              <li class="skills-card-item">DB2</li>
+              <li class="skills-card-item">JCLs</li>
+              <li class="skills-card-item">Sort</li>
+              <li class="skills-card-item">Control-M</li>
+              <li class="skills-card-item">Colas MQ</li>
+              <li class="skills-card-item">Smart Test</li>
+              <li class="skills-card-item">ChangeMan</li>
+            </ul>
+          </div>
+          <div class="skills-card">
+            <p class="skills-card-title">Web</p>
+            <ul class="skills-card-details">
+              <li class="skills-card-item">HTML</li>
+              <li class="skills-card-item">CSS</li>
+              <li class="skills-card-item">JavaScript</li>
+              <li class="skills-card-item">Node.JS</li>
+              <li class="skills-card-item">React.JS</li>
+              <li class="skills-card-item">JCLs</li>
+              <li class="skills-card-item">MongoDB</li>
+            </ul>
+          </div>
+          <div class="skills-card">
+            <p class="skills-card-title">Otros</p>
+            <ul class="skills-card-details">
+              <li class="skills-card-item">Windows &verbar; MacOS</li>
+              <li class="skills-card-item">MS Office</li>
+              <li class="skills-card-item">Google Workspace</li>
+              <li class="skills-card-item">Corel</li>
+              <li class="skills-card-item">Adobe Ilustrator</li>
+              <li class="skills-card-item">Photoshop</li>
+              <li class="skills-card-item">Logic Pro / Reaper</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container container-sub container-secondary-skills">
+          <div class="secondary-skills-bars">
+            <h3 class="heading-section-sub">Otras Habilidades</h3>
+            <div class="progress-bar-container">
+              <h4>Organizado</h4>
+              <div class="progress-bar">
+                <span class="percentage p-organized"></span>
+              </div>
+            </div>
+
+            <div class="progress-bar-container">
+              <h4>Orientado al detalle</h4>
+              <div class="progress-bar">
+                <span class="percentage p-detailed"></span>
+              </div>
+            </div>
+
+            <div class="progress-bar-container">
+              <h4>Flexibilidad para aprender</h4>
+              <div class="progress-bar">
+                <span class="percentage p-flexibility"></span>
+              </div>
+            </div>
+
+            <div class="progress-bar-container">
+              <h4>Adaptabilidad</h4>
+              <div class="progress-bar">
+                <span class="percentage p-adaptability"></span>
+              </div>
+            </div>
+
+            <div class="progress-bar-container">
+              <h4>Trabajo en equipo</h4>
+              <div class="progress-bar">
+                <span class="percentage p-team-working"></span>
+              </div>
+            </div>
+
+            <div class="progress-bar-container">
+              <h4>Gestión del tiempo</h4>
+              <div class="progress-bar">
+                <span class="percentage p-timing"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="language-skills">
+            <h3 class="heading-section-sub">Idiomas</h3>
+            <div class="language-skills-details">
+              <div class="language-skills-item">
+                <img
+                  class="country-flag-img"
+                  alt="bandera española"
+                  src="img/languajes/flag_spain.png"
+                />
+                <div>
+                  <p>Español</p>
+                  <p>(nativo)</p>
+                </div>
+              </div>
+              <div class="language-skills-item">
+                <img
+                  class="country-flag-img"
+                  alt="bandera britanica"
+                  src="img/languajes/flag_uk.png"
+                />
+                <div>
+                  <p>Inglés</p>
+                  <p>(C1)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section-experience">
+        <div class="container">
+          <span class="heading-section-tag">Experiencia Laboral</span>
+          <h2 class="heading-section-title">
+            Mi historia profesional y todo lo que aprendí
+          </h2>
+        </div>
+
+        <div class="container container-experience">
+          <div class="timeline-item">
+            <span class="timeline-item-date">Feb 2009 &sol; Ene 2015</span>
+            <p class="timeline-item-work">
+              BBVA Frances (Sistemas Activos SRL)
+            </p>
+            <p class="timeline-item-job">
+              Analista Programador COBOL Mainframe Jr&sol;Ssr&sol;Sr
+            </p>
+            <div class="timeline-item-business-card">
+              <p>Cuentas &sol; Resúmenes de cuenta</p>
+              <p>Cajas de Seguridad &sol; Paquetes de cuentas</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-item-date">Ago 2015 &sol; Ene 2016</span>
+            <p class="timeline-item-work">ISBAN (Acciona IT)</p>
+            <p class="timeline-item-job">
+              Analista Programador COBOL Mainframe Sr
+            </p>
+            <div class="timeline-item-business-card">
+              <p>Tarjetas de débito</p>
+              <p>Tarjetas de crédito</p>
+              <p>Seguimiento de piezas</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-item-date">Ene 2016 &sol; Abr 2017</span>
+            <p class="timeline-item-work">Cognizant Technology Solutions</p>
+            <p class="timeline-item-job">
+              Analista Programador COBOL Mainframe Sr
+            </p>
+            <div class="timeline-item-business-card">
+              <p>Mantenimiento y Soporte</p>
+              <p>Arquitectura de aplicaciones Mainframe</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-item-date">Abr 2017 &sol; Dic 2018</span>
+            <p class="timeline-item-work">ISBAN (Ecosistemas SRL)</p>
+            <p class="timeline-item-job">
+              Analista Programador COBOL Mainframe Sr
+            </p>
+            <div class="timeline-item-business-card">
+              <p>Préstamos</p>
+              <p>Resúmenes de cuenta</p>
+              <p>Plazos Fijos</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-item-date">Dic 2018 &sol; Jul 2021</span>
+            <p class="timeline-item-work">Santander Tecnología</p>
+            <p class="timeline-item-job">
+              Analista Programador COBOL Mainframe Sr
+            </p>
+            <div class="timeline-item-business-card">
+              <p>Préstamos Personales</p>
+              <p>Préstamos Prendarios</p>
+              <p>Préstamos Hipotecarios</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-item-date">Jul 2021 &sol; Presente</span>
+            <p class="timeline-item-work">BBVA Argentina</p>
+            <p class="timeline-item-job">
+              Analista Programador COBOL Mainframe Sr
+            </p>
+            <div class="timeline-item-business-card">
+              <p>Cheques</p>
+              <p>eCheqs</p>
+              <p>Efectos (custodia y descuento de cheques)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section-education">
+        <div class="container">
+          <span class="heading-section-tag">Educación Formal</span>
+          <h2 class="heading-section-title">Nobleza Obliga</h2>
+        </div>
+
+        <div class="container container-sub container-education">
+          <div class="education-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="education-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              />
+            </svg>
+            <div class="education-card">
+              <span class="education-card-date">2004 &sol; 2008</span>
+              <p class="education-card-title">
+                Secundario Técnico, EET N°7 &quot;José Hernández &quot;
+              </p>
+              <p class="education-card-location">Avellaneda, Buenos Aires</p>
+              <p class="education-card-details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit dolor, ab nostrum earum doloremque deserunt
+                dolorum, sequi dolores laborum officia magnam provident vel,
+                nesciunt temporibus corrupti perspiciatis rem ut nulla?
+              </p>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="education-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+              />
+            </svg>
+            <div class="education-card">
+              <span class="education-card-date">2019 &sol; Presente</span>
+              <p class="education-card-title">
+                Universidad de Buenos Aires, Facultad de Ciencias Económicas
+              </p>
+              <p class="education-card-location">
+                CABA (Ciudad Autónoma de Buenos Aires)
+              </p>
+              <p class="education-card-details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit dolor, ab nostrum earum doloremque deserunt
+                dolorum, sequi dolores laborum officia magnam provident vel,
+                nesciunt temporibus corrupti perspiciatis rem ut nulla?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXTRA ACTIVITIES -->
+      <section class="section-extra-activities">
+        <div class="container">
+          <span class="heading-section-tag">Otras Actividades</span>
+          <h2 class="heading-section-title">
+            Algunos proyectos extra-laborales llevados con orgullo
+          </h2>
+        </div>
+
+        <div class="container container-sub container-extra-activities">
+          <div class="extra-activities-card">
+            <span class="extra-activity-name">Mama Chole</span>
+            <div class="extra-activity-img">
+              <img
+                src="img/secondary/secondary_mamaChole.png"
+                alt="Mama Chole"
+              />
+            </div>
+            <p class="extra-activity-title">Comidas dietéticas congeladas</p>
+            <p class="extra-activity-details">
+              Administración &verbar; Diseños Corel de logos, panfletos y
+              etiquetas &verbar; Delivery &verbar; Recruitment de clientes
+            </p>
+          </div>
+
+          <div class="extra-activities-card">
+            <span class="extra-activity-name">Guido Vision</span>
+            <div class="extra-activity-img">
+              <img
+                src="img/secondary/secondary_youtube.png"
+                alt="Guido Fernandez Youtube"
+              />
+            </div>
+            <p class="extra-activity-title">Producción de Videos Musicales</p>
+            <p class="extra-activity-details">
+              Producción y edición musical y audiovisual
+            </p>
+          </div>
+
+          <div class="extra-activities-card">
+            <span class="extra-activity-name">K-Stom &excl;T</span>
+            <div class="extra-activity-img">
+              <img src="img/secondary/secondary_kstomit.png" alt="K-Stom !T" />
+            </div>
+            <p class="extra-activity-title">Remeras Personalizadas v&sol;Web</p>
+            <p class="extra-activity-details">
+              Diseños en Corel y Adobe Illustrator &verbar; Estampado &verbar;
+              Administración &verbar; Envíos
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOBBIES -->
+      <section class="section-hobbies">
+        <div class="container">
+          <span class="heading-section-tag">Hobbies</span>
+          <h2 class="heading-section-title">
+            Pasiones, gustos, caprichos y placeres presentes en mi vida
+          </h2>
+        </div>
+
+        <div class="container container-sub container-hobbies">
+          <div class="hobbie-item">
+            <div class="hobbie-item-icon">
+              <img
+                class="hobbie-item-img"
+                src="img/hobbies/hobbie-musicproduction.png"
+                alt="Producción
+              musical"
+              />
+            </div>
+            <p class="hobbie-item-description">Producción Musical</p>
+          </div>
+          <div class="hobbie-item">
+            <div class="hobbie-item-icon">
+              <img
+                class="hobbie-item-img"
+                src="img/hobbies/hobbie-boardgames.png"
+                alt="juegos de mesa"
+              />
+            </div>
+            <p class="hobbie-item-description">Juegos de Mesa Euro</p>
+          </div>
+          <div class="hobbie-item">
+            <div class="hobbie-item-icon">
+              <img
+                class="hobbie-item-img"
+                src="img/hobbies/hobbie-martial.png"
+                alt="Artes Marciales"
+              />
+            </div>
+            <p class="hobbie-item-description">Artes Marciales</p>
+          </div>
+          <div class="hobbie-item">
+            <div class="hobbie-item-icon">
+              <img
+                class="hobbie-item-img"
+                src="img/hobbies/hobbie-yoga.png"
+                alt="Yoga"
+              />
+            </div>
+            <p class="hobbie-item-description">Yoga</p>
+          </div>
+          <div class="hobbie-item">
+            <div class="hobbie-item-icon">
+              <img
+                class="hobbie-item-img"
+                src="img/hobbies/hobbie-musictheory.png"
+                alt="Teoría Musical"
+              />
+            </div>
+            <p class="hobbie-item-description">Teoría Musical</p>
+          </div>
+          <div class="hobbie-item">
+            <div class="hobbie-item-icon">
+              <img
+                class="hobbie-item-img"
+                src="img/hobbies/hobbie-videogames.png"
+                alt="Videojuegos"
+              />
+            </div>
+            <p class="hobbie-item-description">Videojuegos</p>
+          </div>
+          <div class="hobbie-item">
+            <div class="hobbie-item-icon">
+              <img
+                class="hobbie-item-img"
+                src="img/hobbies/hobbie-gardening.png"
+                alt="Jardinería"
+              />
+            </div>
+            <p class="hobbie-item-description">Jardinería</p>
+          </div>
+          <div class="hobbie-item">
+            <div class="hobbie-item-icon">
+              <img
+                class="hobbie-item-img"
+                src="img/hobbies/hobbie-moto.png"
+                alt="Motos"
+              />
+            </div>
+            <p class="hobbie-item-description">Motocicletas</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT ME -->
+      <section class="section-contact-me">
+        <div class="container">
+          <span class="heading-section-tag">Contactame</span>
+          <h2 class="heading-section-title">
+            Conversemos un poco mas en detalle
+          </h2>
+        </div>
+        <div class="container container-contact-me">
+          <div class="contact-me-details">
+            <p class="about-me-name">Guido Esteban Fernández</p>
+            <p class="about-me-txt-profession">
+              Analista Programador COBOL Mainframe Sr.
+            </p>
+            <quote class="contact-me-quote">
+              &quot;La inflación es siempre y en cualquier lugar un fenómeno
+              monetario.&quot;
+            </quote>
+            <img
+              class="contact-me-sign"
+              alt="Guido Fernández"
+              src="img/GuidoFernandezWebLogo.png"
+            />
+            <div class="contact-me-links">
+              <div class="contact-me-link-item">
+                <p class="contact-me-data-title">+ 54 11 6230-3847</p>
+                <a
+                  class="contact-me-button contact-me-button-half"
+                  href="https://wa.me/5491162303847?text=Hi%20Guido!"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="contact-me-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="contact-me-button contact-me-button-half"
+                  href="tel:5491162303847"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="contact-me-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="contact-me-link-item">
+                <p class="contact-me-data-title">
+                  gfernandez87&commat;gmail.com
+                </p>
+                <a
+                  class="contact-me-button"
+                  href="mailto:gfernandez87@gmail.com"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="contact-me-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="contact-me-link-item">
+                <p class="contact-me-data-title">&sol;guido-fernandez</p>
+                <a
+                  class="contact-me-button"
+                  href="https://www.linkedin.com/in/guido-fernandez/"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="contact-me-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="contact-me-link-item">
+                <p class="contact-me-data-title">Buenos Aires, Argentina</p>
+                <a
+                  class="contact-me-button"
+                  href="https://goo.gl/maps/z9Byw4h5LhBrkR1q8"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="contact-me-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+                    />
+                    <path
+                      d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-me-img" role="img" aria-label="Guido Fernández 2">
+            <!-- <img
+              src="/img/gf4.jpeg"
+              alt="guido fernandez tocando la guitarra"
+            /> -->
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container grid grid--footer">
-        <div class="logo-col">
-          <a href="#" class="footer-logo">
-            <img class="logo" alt="omnifood-logo" src="img/omnifood-logo.png" />
-          </a>
-
-          <ul class="social-links">
-            <li>
-              <a class="footer-link" href=""
-                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a class="footer-link" href=""
-                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a class="footer-link" href=""
-                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
-              ></a>
-            </li>
-          </ul>
-
-          <p class="copyright">
-            Copyright &copy; <span class="year">2027</span> by Omnifood, Inc.
-            All rights reserved.
-          </p>
-        </div>
-
-        <div class="address-col">
-          <p class="footer-heading">Contact us</p>
-          <address class="contacts">
-            <p class="address">
-              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+    <!-- F O O T E R -->
+    <footer>
+      <div class="container container-footer">
+        <div class="footer-self-data">
+          <div class="footer-self-data-card">
+            <a href="#">
+              <img
+                class="logo-footer"
+                alt="Guido Fernández"
+                src="img/GuidoFernandezWebLogo.png"
+              />
+            </a>
+            <p class="footer-self-job">
+              Analista Programador COBOL Mainframe Sr.
             </p>
-            <p>
-              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
-              ><br />
-              <a class="footer-link" href="mailto:hello@omnifood.com"
-                >hello@omnifood.com</a
+          </div>
+          <ul class="footer-self-data-list">
+            <li class="footer-self-data-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="footer-self-data-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
               >
-            </p>
-          </address>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"
+                />
+              </svg>
+              <p>Argentino</p>
+            </li>
+            <li class="footer-self-data-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="footer-self-data-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                />
+              </svg>
+              <p>Casado</p>
+            </li>
+            <li class="footer-self-data-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="footer-self-data-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
+                />
+              </svg>
+              <p>19 de Junio</p>
+            </li>
+          </ul>
         </div>
-
-        <nav class="nav-col">
-          <p class="footer-heading">Account</p>
-          <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Create account</a></li>
-            <li><a class="footer-link" href="#">Sign in</a></li>
-            <li><a class="footer-link" href="#">iOS app</a></li>
-            <li><a class="footer-link" href="#">Android app</a></li>
+        <div class="footer-vertical-line"></div>
+        <div class="footer-self-contact">
+          <p class="footer-self-contact-title">Contacto</p>
+          <ul class="footer-self-contact-list">
+            <li class="footer-self-contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="footer-self-contact-icon"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"
+                />
+              </svg>
+              <a class="footer-self-contact-link" href="tel:5491162303847"
+                >(+54) 11 6230-3847</a
+              >
+            </li>
+            <li class="footer-self-contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="footer-self-contact-icon"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                />
+              </svg>
+              <a
+                class="footer-self-contact-link"
+                href="mailto:gfernandez87@gmail.com"
+                >gfernandez87&commat;gmail.com</a
+              >
+            </li>
+            <li class="footer-self-contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="footer-self-contact-icon"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                />
+              </svg>
+              <a
+                class="footer-self-contact-link"
+                href="https://www.linkedin.com/in/guido-fernandez/"
+                target="_blank"
+                >&sol;guido-fernandez</a
+              >
+            </li>
+            <li class="footer-self-contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="footer-self-contact-icon"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              <a
+                class="footer-self-contact-link"
+                href="https://goo.gl/maps/z9Byw4h5LhBrkR1q8"
+                target="_blank"
+                >Buenos Aires, Argentina</a
+              >
+            </li>
           </ul>
-        </nav>
-        <nav class="nav-col">
-          <p class="footer-heading">Company</p>
-          <ul class="footer-nav">
-            <li><a class="footer-link" href="#">About Omnifood</a></li>
-            <li><a class="footer-link" href="#">For Business</a></li>
-            <li><a class="footer-link" href="#">Cooking partners</a></li>
-            <li><a class="footer-link" href="#">Careers</a></li>
-          </ul>
-        </nav>
-        <nav class="nav-col">
-          <p class="footer-heading">Resources</p>
-          <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Recipe directory</a></li>
-            <li><a class="footer-link" href="#">Help center</a></li>
-            <li><a class="footer-link" href="#">Privacy & terms</a></li>
-          </ul>
-        </nav>
+        </div>
       </div>
     </footer>
   </body>
